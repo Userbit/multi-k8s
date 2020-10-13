@@ -1,0 +1,7 @@
+dist: focal
+sudo: true
+services:
+  - docker
+before_install:
+  - curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+  - az version
